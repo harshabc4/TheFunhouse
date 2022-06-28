@@ -5,17 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Funhouse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
     <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
+    <header>
+        <!-- <div class="menu-btn">
+            <div class="menu-btn_burger">
+
+            </div>
+        </div> -->
+        <div class="menu-btn">
+        <div class="menu-btn_burger">
+
+    </div>
+    </div>
     <nav>
-        <ul>
+        <ul class="nav-options hidden">
             <li>Home</li>
-            <li>Testiomnials</li>
+            <li>Booking</li>
+            <li>Testimonials</li>
         </ul>
     </nav>
-    <img src="/public/assets/logo.jpg">
+
+    </header>
+    <h1>Welcome to Richmond's premier music recording studio</h1>
+   
+
+    <div class='img-container'>
+        <img id="full-logo" src="/assets/logo.jpg">
+    </div>
+
+    <section class='services-banner'>
+        <h2>Services</h2>
+    </section>
+
+    <footer>
+        <footer class="bg-dark text-center text-white">
+            <div class="container p-4 pb-0">
+              <section class="mb-4">
+               
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" href="mailto:harshabc4@gmail.com" role="button"
+                  ><i class="fa fa-envelope"></i
+                ></a>
+        
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/brianharsha/" role="button"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+          
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/harshabc4" role="button"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </section>
+            </div>
+        
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+              © 2022 Copyright:
+              <a class="text-white" href="https://brianharsha.netlify.app/">Brian Harsha</a>
+            </div>
+    </footer>
+    
 
     <script src='js/main.js'></script>
 </body>

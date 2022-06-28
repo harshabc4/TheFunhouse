@@ -1,6 +1,24 @@
 const deleteText = document.querySelectorAll('.fa-trash')
 const thumbText = document.querySelectorAll('.fa-thumbs-up')
 
+
+const menuBtn = document.querySelector('.menu-btn');
+const navOptions = document.querySelector('.nav-options')
+let menuOpen = false;
+menuBtn.addEventListener('click', () => {
+    if(!menuOpen) {
+        menuBtn.classList.add('open');
+        navOptions.classList.remove('hidden')
+        navOptions.classList.add('fade-in')
+
+        menuOpen = true;
+    }else {
+        menuBtn.classList.remove('open');
+        navOptions.classList.add('hidden')
+        menuOpen = false;
+    }
+})
+
 Array.from(deleteText).forEach((element)=>{
     element.addEventListener('click', deleteMaterial)
 })

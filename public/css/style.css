@@ -20,18 +20,235 @@
 /******************************************
 /* BASE STYLES
 /*******************************************/
+body *{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  /* margin: 0.75em; */
+}
 
 body {
+  /* display: grid; */
+  background-color: #1d1e19;
+  color: #fbf8cf;
+  /* min-height: 100vh;
+  overflow: hidden; */
+}
+
+h1 {
+  display: inline-block;
+  font-size: 1.25rem;
+  text-align: center;
+  color: #77c6cc;
+  padding-bottom: 0px;
+  transform: translate(0px, 15px);
 
 }
 
+/******************************************
+/* Header and Nav
+/*******************************************/
+
+header {
+  height: 3rem;
+  background-color: #77c6cc;
+}
+
+nav {
+  position: relative;
+  font-size: 0.75rem;
+  top: 45px;
+  background-color: #1d1e19;
+  width: 25%;
+  margin-left: 15px;
+}
+
+.fade-in {
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+   -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+       animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+ul {
+  width: 50%;
+}
+
+li {
+  margin-top: 5px;
+  width: 50%;
+}
+
+.hidden {
+  display: none;
+}
+
+/* header {
+  margin-top: 0px;
+}
+
+nav {
+margin-bottom: 1em;
+
+}
+
+ul {
+  display: grid;
+  gap: 1.25rem;
+  grid-auto-columns: 3fr;
+  grid-template-areas:
+  'one two three';
+  padding-left: 0px;
+  margin: auto;
+  justify-content: space-between;
+
+}
+
+li {
+  text-align: center;
+}
+
+nav>ul>li:first-child {
+  grid-area: one;
+}
+
+nav>ul>li:nth-child(2) {
+  grid-area: two;
+}
+
+nav>ul>li:nth-child(3) {
+  grid-area: three;
+}
+*/
+
+ul {
+  list-style-type: none;
+  /* float: left; */
+} 
+
+/******************************************
+/* Hamburger
+/*******************************************/
+
+.menu-btn {
+  /* float: left; */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+  /* border: 3px solid white; */
+}
+
+.menu-btn_burger {
+  margin: 17.5px -10px 10px 10px;
+  width: 50px;
+  height: 3px;
+  background: #1d1e19;
+  border-radius: 5px;
+  /* box-shadow: 0 2px 5px red; */
+  transition: all .5s ease-in-out;
+}
+
+.menu-btn_burger::before,
+.menu-btn_burger::after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background: #1d1e19;
+  border-radius: 5px;
+  /* box-shadow: 0 2px 5px red; */
+  transition: all .5s ease-in-out;
+}
+
+.menu-btn_burger::before {
+  transform: translateY(-16px);
+}
+
+.menu-btn_burger::after {
+  transform: translateY(16px);
+}
+
+.menu-btn.open .menu-btn_burger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+
+.menu-btn.open .menu-btn_burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-btn_burger::after {
+  transform: rotate(-45deg) translate(35px, 35px)
+}
+
+/******************************************
+/* IMG
+/*******************************************/
+/* div {
+  display: flex;
+  max-width: 100%;
+  margin-top: 0px;
+  padding-bottom: 0px;
+
+} */
+div {
+  display: flex;
+  /* max-width: 100%; */
+  margin: 0px;
+  padding-bottom: 0px;
+
+}
+
+
+#full-logo {
+  width: 50%;
+  justify-content: center;
+  margin: auto;
+  min-width: 50%;
+}
+
+/******************************************
+/* Services
+/*******************************************/
+.services-banner {
+  background-color:  #fbf8cf;
+  color:  #1d1e19;
+  text-align: center;
+}
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
 
-}
 
 footer {
 
@@ -40,3 +257,40 @@ footer {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+@media screen and (min-width: 43rem){
+  nav {
+    margin-bottom: 1em;
+    }
+    
+    ul {
+      display: grid;
+      gap: 1.25rem;
+      grid-auto-columns: 3fr;
+      grid-template-areas:
+      'one two three';
+      padding-left: 0px;
+      margin: auto;
+      justify-content: space-between;
+    
+    }
+    
+    li {
+      text-align: center;
+    }
+    
+    nav>ul>li:first-child {
+      grid-area: one;
+    }
+    
+    nav>ul>li:nth-child(2) {
+      grid-area: two;
+    }
+    
+    nav>ul>li:nth-child(3) {
+      grid-area: three;
+    }
+    
+    ul {
+      list-style-type: none;
+    }
+}
