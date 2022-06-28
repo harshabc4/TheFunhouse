@@ -322,10 +322,11 @@ footer * {
 
 .social-media-wrapper {
   margin: 0px auto;
-  padding: 25px 0px;
+  padding: 15px 0px;
   width: 60%;
   display: flex;
   justify-content: space-around;
+  font-size: 2rem;
 }
 
 .design {
@@ -464,6 +465,7 @@ footer * {
 
   footer .social-media-wrapper a i {
     font-size: 3rem;
+    margin: 0px auto;
   }
 
   .funhouse-copyright {
@@ -532,6 +534,10 @@ footer * {
   p {
     width: 40%;
     padding: 4rem;
+  }
+
+  .social-media-wrapper {
+    width: 70rem;
   }
 
 }
