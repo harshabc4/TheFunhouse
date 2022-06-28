@@ -58,6 +58,8 @@ a {
 
 .design {
   font-size: 0.75rem;
+  width: 9rem;
+  margin: 0px auto;
 }
 
 /******************************************
@@ -471,7 +473,7 @@ footer * {
   .design {
     display: flex;
     justify-items: center;
-    width: 50%;
+    width: 10rem;
     padding: 0.5rem;
     margin-top: 0px;
     margin: 0px auto;
