@@ -4,17 +4,21 @@ const thumbText = document.querySelectorAll('.fa-thumbs-up')
 
 const menuBtn = document.querySelector('.menu-btn');
 const navOptions = document.querySelector('.nav-options')
+const main = document.querySelector('.main')
 let menuOpen = false;
 menuBtn.addEventListener('click', () => {
     if(!menuOpen) {
         menuBtn.classList.add('open');
         navOptions.classList.remove('hidden')
         navOptions.classList.add('fade-in')
+        main.classList.add('repositioned')
+        // main.classList.add('ease-in')
 
         menuOpen = true;
     }else {
         menuBtn.classList.remove('open');
         navOptions.classList.add('hidden')
+        main.classList.remove('repositioned')
         menuOpen = false;
     }
 })

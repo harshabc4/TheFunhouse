@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>The Funhouse</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,65 +15,76 @@
     
 </head>
 <body>
-    <header>
-        <!-- <div class="menu-btn">
-            <div class="menu-btn_burger">
 
-            </div>
-        </div> -->
-        <div class="menu-btn">
-        <div class="menu-btn_burger">
+  <header>
+    <div class="menu-btn">
+      <div class="menu-btn_burger">
+      </div>
+    </div>
 
-    </div>
-    </div>
     <nav>
         <ul class="nav-options hidden">
-            <li>Home</li>
-            <li>Booking</li>
-            <li>Testimonials</li>
+            <li><a href="1">Home</a></li>
+            <li><a href="2">Booking</a></li>
+            <li><a href="3">Testimonials</a></li>
         </ul>
     </nav>
+  </header>
 
-    </header>
+  <section class="main ease-in">
     <h1>Welcome to Richmond's premier music recording studio</h1>
-   
 
     <div class='img-container'>
-        <img id="full-logo" src="/assets/logo.jpg">
+        <img id="full-logo" src="/assets/funhousesquarelogocropped.png">
+    </div>
+
+    <div class="video-wrapper">
+        <iframe class="video-player" width="560" height="315" src="https://www.youtube.com/embed/B7QaT_-Wzow" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
     <section class='services-banner'>
-        <h2>Services</h2>
+        <h2>Home Grown</h2>
     </section>
 
+    <p>Born in the Lakeside neighborhood, The Funhouse&trade; has been producing high quality recordings for the better part of a decade.  The in-house audio engineers are here to help you bring your project to life.</p>
+
+
     <footer>
-        <footer class="bg-dark text-center text-white">
-            <div class="container p-4 pb-0">
-              <section class="mb-4">
-               
-                <!-- Google -->
-                <a class="btn btn-outline-light btn-floating m-1" href="mailto:harshabc4@gmail.com" role="button"
-                  ><i class="fa fa-envelope"></i
-                ></a>
+
+      <section class="social-media-wrapper">
         
-                <!-- Linkedin -->
-                <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/brianharsha/" role="button"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-          
-                <!-- Github -->
-                <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/harshabc4" role="button"
-                  ><i class="fab fa-github"></i
-                ></a>
-              </section>
-            </div>
-        
-            <!-- Copyright -->
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-              © 2022 Copyright:
-              <a class="text-white" href="https://brianharsha.netlify.app/">Brian Harsha</a>
-            </div>
+        <!-- Google -->
+        <a href="mailto:cwdgray@gmail.com" role="button"
+          ><i class="fa fa-envelope fa-lg"></i
+        ></a>
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/thefunhouserichmond/" role="button"
+          ><i class="fab fa-instagram fa-lg"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a href="#" role="button"
+          ><i class="fab fa-twitter fa-lg"></i
+        ></a>
+      </section>
+
+  
+      <!-- Copyright -->
+      <div class="copyright-wrapper">
+        <div class="funhouse-copyright">
+        © The Funhouse
+        </div>
+        <div class="design">Design by:
+          <a href="https://brianharsha.netlify.app/">Brian Harsha</a>
+        </div>
+      </div>
+
     </footer>
+    
+  </section>
+
+    
     
 
     <script src='js/main.js'></script>
